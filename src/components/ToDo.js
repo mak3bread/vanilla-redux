@@ -8,15 +8,15 @@ function ToDo({text, onBtnClick, id}) {
     <li>
         <Link to ={`/${id}`}>
         {text}
-        <button onClick={onBtnClick}>DEL</button>
         </Link>
+        <button onClick={onBtnClick}>DEL</button>
     </li>
     );
 }
 
 function mapDispatchToProps(dispatch, ownProps){
     return {
-        onBtnClick : () => dispatch(actionCreators.deleteTodo(ownProps.id))
+        onBtnClick : () => dispatch(actionCreators.deleteToDo(ownProps.id))
     }
 }
 

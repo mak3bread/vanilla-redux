@@ -15,7 +15,7 @@ function Home ({toDos, addToDo}) {
         addToDo(text);
         setText("");
         
-    }
+    } 
 
     return (
     <>
